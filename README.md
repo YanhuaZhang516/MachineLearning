@@ -49,7 +49,7 @@
 - [CNN in computer vision (standford)](https://cs231n.github.io/convolutional-networks/)
 - [deep learning-CNN,RNN(standford)](https://stanford.edu/~shervine/teaching/cs-230/)
 ## 7. Neuronale Netze
-## 8. [Faltende Neuronale Netze(CNNs)]
+## 8. Faltende Neuronale Netze(CNNs)
 ## 9. CNN-Architekturen und -Anwendungen
 ## 10. Rekurrente Neuronale Netze
 
