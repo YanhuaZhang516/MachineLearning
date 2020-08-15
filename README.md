@@ -38,6 +38,21 @@
   - Kernel-Funktionen
 - SVM-Regression
 - Einfluss der SVM-Hyperparameter
+
+## 4. Bäume und Ensembles 决策树和基模型
+## 5. Training und Bewertung
+## 6. Unüberwachtes Lernen
+
+
+#  DeepLearing-part(English)
+## 参考资料：
+- [CNN in computer vision (standford)](https://cs231n.github.io/convolutional-networks/)
+- [deep learning-CNN,RNN(standford)](https://stanford.edu/~shervine/teaching/cs-230/)
+## 7. Neuronale Netze
+## 8. [Faltende Neuronale Netze(CNNs)]
+## 9. CNN-Architekturen und -Anwendungen
+## 10. Rekurrente Neuronale Netze
+
  
   
   
