@@ -8,7 +8,7 @@
   - Lineare Regression 线性回归
     - multivariate Regression
     - Optimierung problem
-      - Normalgleichung
+      - Normalgleichung/normal equation 矩阵方程法[normal equation 和梯度下降法的比较](https://blog.csdn.net/Artprog/article/details/51172025)
     - Regressionkoeffizienten
     - Basisfunktionen-Modelle 线性回归模型
     - Regularisierung 正则化
