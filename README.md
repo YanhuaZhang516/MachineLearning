@@ -1,7 +1,7 @@
 # MachineLearning(Germany+Chinese)
 学习+面试准备
-## 1. the concept of Machine Learning 机器学习基本概念
-- [ ] 8.15
+## 1. [the concept of Machine Learning 机器学习基本概念](https://github.com/YanhuaZhang516/MachineLearning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A6%82%E5%BF%B5.md)
+- [x] 8.15
 
 ## 2. Lineare Modelle 线性模型
 - [ ] 8.15
