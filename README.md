@@ -1,7 +1,8 @@
 # MachineLearning(Germany+Chinese)
 学习+面试准备
-1. the concept of Machine Learning
-2. Lineare Modelle
+## 1. the concept of Machine Learning 机器学习基本概念
+
+## 2. Lineare Modelle 线性模型
   - Lineare Regression 线性回归
     - multivariate Regression
     - Optimierung problem
@@ -13,7 +14,30 @@
   - Logistische Regression 逻辑回归
   - Verlustfunktion
   - Zielfunktionen
-    
-
+  
+  ## 3. Support-Vector-Machines 支持向量机
+  感知机模型的基本思想是：先随机选择一个超平面对样本点进行划分，然后当一个实例点被误分类，即位于分类超平面错误的一侧时，则调整w和b，使分类超平面向该误分类点的一侧移动，直至超平面越过该误分类点为止。所以，如果给的初始值不同，则最后得到的分割超平面wx+b=0也可能不同，即感知机模型的分割超平面可能存在很多个。
+  
+  注意：感知机模型有两个缺点，即当训练数据集线性不可分时，感知机的学习算法不收敛，迭代过程会发生震荡。另外，感知机模型仅适用于二分类问题，在现实应用中存在一定局限性。
+  
+- Maximal-Margin-Klassifikation
+- Entscheidungsfunktion
+- Optimierungsproblem
+- Grenzfälle(Schlupvariablen)
+- Soft-Margin-Klassifikation
+- Robuste Klassifikation
+- Optimierung
+  - Primales Problem
+  - Duales Problem
+- KKT
+- Duales SVM-Problem
+  - Interpretation der dualen Loesung
+- NichtLineare SVMs
+  - Interpretation der nichtlinearen SVM
+- Duales Problem mit Kernel
+  - Kernel-Funktionen
+- SVM-Regression
+- Einfluss der SVM-Hyperparameter
+ 
   
   
