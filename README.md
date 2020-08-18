@@ -4,7 +4,7 @@
 - [x] 8.15
 
 ## 2. Lineare Modelle 线性模型
-- [ ] 8.15
+- [x] 8.15
   - Lineare Regression 线性回归
     - multivariate Regression
     - Optimierung problem
