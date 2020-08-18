@@ -9,6 +9,7 @@
     - multivariate Regression
     - Optimierung problem
       - Normalgleichung/normal equation 矩阵方程法[normal equation 和梯度下降法的比较](https://blog.csdn.net/Artprog/article/details/51172025)
+      - [为什么样本方差分母是n-1(无偏估计)](https://www.zhihu.com/question/20099757)
     - Regressionkoeffizienten
     - Basisfunktionen-Modelle 线性回归模型
     - Regularisierung 正则化
