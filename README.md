@@ -38,10 +38,14 @@
   - Duales Problem
 - KKT
 - Duales SVM-Problem
+  - [SMO算法](https://zhuanlan.zhihu.com/p/29212107)
+  - [如何求得b值](https://weread.qq.com/web/reader/bc532d1071845519bc5b2a1k6c8328f022d6c8349cc72d5)
   - Interpretation der dualen Loesung
 - NichtLineare SVMs
   - Interpretation der nichtlinearen SVM
 - Duales Problem mit Kernel
+
+通过引入松弛变量，线性支持向量机可以有效解决数据集中带有异常点的情况。但实际中，很多数据可能并不只是带有异常点这么简单，而是完全非线性可分的,引入核函数
   - Kernel-Funktionen
 - SVM-Regression
 - Einfluss der SVM-Hyperparameter
