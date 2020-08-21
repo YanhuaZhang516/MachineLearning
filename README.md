@@ -53,6 +53,32 @@
 ## 4. Bäume und Ensembles 决策树和基模型
 - [ ] 8.21
 
+- 决策树
+
+决策树（Decision Tree）是一种树状结构模型，可以进行基本的分类与回归，另外它也是后面要讲的集成方法经常采用的基模型。决策树主要涉及三要素：特征选择，决策树的生成和决策树的剪枝。
+- Inhomogenitätsmasse 特征取值的非均匀性
+- CART-Algorithmus 
+- Regression-tree
+  - CART for regression
+- 集成方法(Ensemble-lernen)
+  - Bias/Varianz-Zerlegung
+- Bagging
+
+Bagging模型的核心思想是每次同类别、彼此之间无强关联的基学习器，以均等投票机制进行基学习器的组合。
+  - Bagging with decision tree
+  - Random Forest 随机森林
+- Boosting
+
+与Bagging模型不同，Boosting模型的各个基学习器之间存在强关联，即后面的基学习器是建立在它前面的基学习器的基础之上的。Boosting模型的代表是提升算法（AdaBoost），更具体的是提升树（Boosting Tree），而提升树比较优秀的实现模型是梯度提升树（GBDT和XGBoost)。
+- AdaBoost
+  - AdaBoost mit Baumstümpfen
+- Stufenweise additive Modellierung 逐级建模
+- Boosting als stufenweise Konstruktion
+- Gradient-Boosting
+- Ensemble-Verfahren
+- Random Forests und Boosting
+ 
+
 
 
 
