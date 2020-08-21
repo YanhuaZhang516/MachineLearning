@@ -57,6 +57,10 @@
 
 决策树（Decision Tree）是一种树状结构模型，可以进行基本的分类与回归，另外它也是后面要讲的集成方法经常采用的基模型。决策树主要涉及三要素：特征选择，决策树的生成和决策树的剪枝。
 - Inhomogenitätsmasse 特征取值的非均匀性
+  - kreuzentropie(Devianz):
+  在信息论或概率统计中，用熵度量随机变量的不确定性。熵值越大，随机变量的不确定性就越大。
+  - Gini-index:
+  基尼系数（Gini）可以用来度量任何不均匀分布，且介于0~1之间的数（0指完全相等，1指完全不相等）。分类度量时，总体包含的类别越杂乱，基尼系数就越大（与熵的概念相似）。
 - CART-Algorithmus 
 - Regression-tree
   - CART for regression
