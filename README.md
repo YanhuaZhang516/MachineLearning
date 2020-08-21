@@ -18,8 +18,8 @@
   - Verlustfunktion
   - Zielfunktionen
   
-  ## 3. Support-Vector-Machines 支持向量机
-  - [ ] 8.19
+  ## 3. [Support-Vector-Machines 支持向量机](https://github.com/YanhuaZhang516/MachineLearning/blob/master/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA.pdf)
+  - [x] 8.20
   
   感知机模型的基本思想是：先随机选择一个超平面对样本点进行划分，然后当一个实例点被误分类，即位于分类超平面错误的一侧时，则调整w和b，使分类超平面向该误分类点的一侧移动，直至超平面越过该误分类点为止。所以，如果给的初始值不同，则最后得到的分割超平面wx+b=0也可能不同，即感知机模型的分割超平面可能存在很多个。
   
@@ -51,13 +51,14 @@
 - Einfluss der SVM-Hyperparameter
 
 ## 4. Bäume und Ensembles 决策树和基模型
-- [ ] 8.20
+- [ ] 8.21
+
 
 
 
 
 ## 5. Training und Bewertung
-- [ ] 8.21
+- [ ] 8.22
 ## 6. Unüberwachtes Lernen
 - [ ] 8.22
 
