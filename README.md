@@ -41,7 +41,7 @@
   - [SMO算法](https://zhuanlan.zhihu.com/p/29212107)
   - [如何求得b值](https://weread.qq.com/web/reader/bc532d1071845519bc5b2a1k6c8328f022d6c8349cc72d5)
   - Interpretation der dualen Loesung
-- NichtLineare SVMs
+- [NichtLineare SVMs](https://www.jianshu.com/p/1b6e31c55f50)
   - Interpretation der nichtlinearen SVM
 - Duales Problem mit Kernel
 
