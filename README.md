@@ -37,7 +37,10 @@
   - Primales Problem
   - Duales Problem
 - KKT
-- Duales SVM-Problem
+- Duales SVM-Problem[为什么要转化为对偶问题](https://www.zhihu.com/question/36694952)
+
+要注意用拉格朗日对偶并没有改变最优解，而是改变了算法复杂度：在原问题下，求解算法的复杂度与样本维度（等于权值w的维度）有关；而在对偶问题下，求解算法的复杂度与样本数量（等于拉格朗日算子a的数量）有关。因此，如果你是做线性分类，且样本维度低于样本数量的话，在原问题下求解就好了，Liblinear之类的线性SVM默认都是这样做的；但如果你是做非线性分类，那就会涉及到升维（比如使用高斯核做核函数，其实是将样本升到无穷维），升维后的样本维度往往会远大于样本数量，此时显然在对偶问题下求解会更好。
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
   - [SMO算法](https://zhuanlan.zhihu.com/p/29212107)
   - [如何求得b值](https://weread.qq.com/web/reader/bc532d1071845519bc5b2a1k6c8328f022d6c8349cc72d5)
   - Interpretation der dualen Loesung
@@ -98,6 +101,11 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
 - [deep learning-CNN,RNN(standford)](https://stanford.edu/~shervine/teaching/cs-230/)
 ## 7. Neuronale Netze
 - [ ] 8.23
+- 基本原理
+  - 前向传播和反向传播
+  - 常用激活算法
+  - 优化算法
+-  
 ## 8. Faltende Neuronale Netze(CNNs)
 - [ ] 8.24
 ## 9. CNN-Architekturen und -Anwendungen
