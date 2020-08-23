@@ -100,15 +100,30 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
 - [CNN in computer vision (standford)](https://cs231n.github.io/convolutional-networks/)
 - [deep learning-CNN,RNN(standford)](https://stanford.edu/~shervine/teaching/cs-230/)
 ## 7. Neuronale Netze
-- [ ] 8.22
+- [x] 8.23
 - 基本原理
   - 一层神经结构
   - 一个神经元
   - [ ] more details to do 前向传播和反向传播
+  
+  基本原理：利用前向传播可以算出预测值，并且计算出其与理论值之间的均方误差。然后求和算出总均方误差。然后开始利用反向传播更新各个权重和偏置常数，目标是使最后输出的总均方误差最小，采用梯度下降法更新。
+  
   - 常用激活算法
   - 优化算法 [Gradient descent optimization](https://ruder.io/optimizing-gradient-descent/index.html#gradientdescentvariants)
-    - 梯度下降
+    - 梯度下降 Gradient descent
       - Steigst descent
+        - 非自适应算法
+          - Gradient descent
+          - Momentum-Optimization
+          - Nesterov accelerated gradient
+        - 自适应算法
+          - RMSProp
+          - AdaGrad
+          - Adam 
+      - 对于更高维度
+        - 共轭 CG
+        - Levenberg-Marquardt(LM): Quasi-Newton for quadrate error
+        - BFGS
  
 ## 8. Faltende Neuronale Netze(CNNs)
 - [ ] 8.24
