@@ -54,7 +54,7 @@
 - Einfluss der SVM-Hyperparameter
 
 ## 4. Bäume und Ensembles 决策树和基模型
-- [ ] 8.21
+- [ ] 8.25
 
 - 决策树
 
@@ -91,9 +91,9 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
 
 
 ## 5. Training und Bewertung
-- [ ] 8.22
+- [ ] 8.24
 ## 6. Unüberwachtes Lernen
-- [ ] 8.22
+- [ ] 8.25
 
 #  DeepLearing-part(English)
 ## 参考资料：
@@ -127,10 +127,67 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
  
 ## 8. Faltende Neuronale Netze(CNNs)
 - [ ] 8.24
+- LeNet
+  - Bild-Klassification
+  - Faltende neuronale Netze  
+    - convolutional layer
+    - Pooling layer
+    - fully-connected layer
+- AlexNet
+- Bildfilterung
+  - hubel & Wiesel
+  - lineare Bildfilterung
+    - Gaussian filter
+    - Sobel-canten detection
+- Eingangsbild
+    - Gray frame (1 ebene)
+    - RGB frame (3 ebene)
+    - RGB+depth frame(4 ebene)
+    - Audio signal (sequence)
+- parameter kernel
+- CONV layer
+- Stride & Padding
+- Pooling layer
+- characters of CNNs
+  - characters
+  - Problem in the training
+- [梯度消失问题 Vanishing Gradient Problem](https://cs231n.github.io/neural-networks-1/#actfun)
+  - 激活函数饱和问题以及解决方法
+- Weight的初始化
+- Batch Normalization
+- Regularisierung
+- Dropout
+- Training tiefer Netze
+  - MNIST
 ## 9. CNN-Architekturen und -Anwendungen
 - [ ] 8.24
+- LeNet and AlexNet
+- VGGNeet
+  - VGGNet-Varianten
+- GoogLeNet and Inception
+  - Inception-module
+  - 1* 1 Conv
+- ResNet
+  - Residuen verbindung
+- Vorbereiten der Trainingsdaten
+- Effizientes Labeling
+- Mehrfachnutzung von Daten
+  - Data augmentation
+- Transfer-learning
+- Application:
+  - Hardware/Softeware for deep learning
+  - Localization, Segmentation, Detection
+  - Object- detection:
+    - Fenster
+    - R-CNN
+    - Fast R-CNN
+    - Faster R-CNN
+    - Mask R-CNN
+  - single-shot-detection
+  -Frameworks for object-detection
+  
 ## 10. Rekurrente Neuronale Netze
-- [ ] 8.25
+- [ ] 8.24
 
   
   
