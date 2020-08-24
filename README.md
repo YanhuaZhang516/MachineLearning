@@ -86,14 +86,21 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
 - Random Forests und Boosting
  
 
-
-
-
-
 ## 5. Training und Bewertung
 - [ ] 8.24
+
 ## 6. Unüberwachtes Lernen
 - [ ] 8.25
+- K-means Clustering
+  - Algorithmus
+    - Abbruchkriterium und Cluster-Anzahl
+    - Instabilität von K-means
+    - Cluster-Analyse
+  - Application:
+    - Anomalie-Detektion
+    - Dichte-Modelle
+  - PCA
+  - Manifold-Learning
 
 #  DeepLearing-part(English)
 ## 参考资料：
@@ -188,6 +195,16 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
   
 ## 10. Rekurrente Neuronale Netze
 - [ ] 8.24
+- RNN Base cell
+- Abrollen von RNNs
+- RNN-configuration
+- Training of RNNs
+- components of Base cell
+- Gradient float
+- Long Short-Term memory
+- LSTM cell
+- Encoder-decoder netze
+
 
   
   
