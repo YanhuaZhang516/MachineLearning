@@ -119,23 +119,22 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
   - Mehrklassen Klassifikation
     - Warheit matrix
   - 分类检测考量的具体操作
-  1. Merkmale visualisieren 特征值分布视觉化 （Histogram or Gauss-modell）
-  2. Vorverarbeitung 数据预处理
-  3. Daten aufteilen 数据分类（Traningsdaten, Testdaten）
-  4.1 Referenz-Klassifikator 
+  - 1. Merkmale visualisieren 特征值分布视觉化 （Histogram or Gauss-modell）
+  - 2. Vorverarbeitung 数据预处理
+  - 3. Daten aufteilen 数据分类（Traningsdaten, Testdaten）
+  - 4. Referenz-Klassifikator 
     - 线性分类器
     - 非线性： AUC曲线
-  4.2 Lernkurven (Fehlerklassifikationsrate)
-  5. Hyperparameter bestimmen 不同模型下，调整参数对误差的影响
+  - 4. Lernkurven (Fehlerklassifikationsrate)
+  - 5. Hyperparameter bestimmen 不同模型下，调整参数对误差的影响
     - SVM Gauß-Kernel
     - Random Forest
-  6.1 Kandidaten auswählen:
+  - 6. Kandidaten auswählen:
   算出不同模型下通过k-fold cross validation算出的 Validierungsfehler 
-  6.2. 绘制出ROC曲线
-  7. Arbeitspunkt festlegen
-  8. Finale Entscheidung
-  
- 从多维度判断：
+  - 6. 绘制出ROC曲线
+  - 7. Arbeitspunkt festlegen
+  - 8. Finale Entscheidung
+  从多维度判断：
   - 1. Testfehler
   - 2. KCV fehler
   - 3. AUC(area under curve)
