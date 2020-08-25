@@ -87,7 +87,7 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
  
 
 ## 5. Training und Bewertung
-- [ ] 8.25
+- [x] 8.25
 
 - Fehlermasse
 不同机器学习任务往往需要使用不同的评估指标，下面分别介绍机器学习中回归模型、分类模型和聚类模型的评估指标
@@ -142,7 +142,6 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
     - Auswertezeit
   
 
-
 ## 6. Unüberwachtes Lernen
 - [ ] 8.25
 - K-means Clustering
@@ -150,9 +149,20 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
     - Abbruchkriterium und Cluster-Anzahl
     - Instabilität von K-means
     - Cluster-Analyse
+   - 特点：
+    - 对初始值非常敏感
+      - 随机多次取初始值
+      - 将初始中点也可以看作Trainingsdata
+      - 考虑cluster-interne varianz
+     - 每个Cluster大小差不多
+    - Cluster 算法的优化：
+      - 多次取不同的初始值
+      - Cluster彼此之间差距大
+      - 获取Cluster最优化数量
+      - 最重要： 计算距离的方式要合适
   - Application:
-    - Anomalie-Detektion
-    - Dichte-Modelle
+    - Anomalie-Detektion 异常值检测
+    - Dichte-Modelle 计算概率密度
   - PCA
   - Manifold-Learning
 
