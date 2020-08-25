@@ -134,12 +134,12 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
   6. 绘制出ROC曲线
   7. Arbeitspunkt festlegen
   8. Finale Entscheidung
-  从多维度判断：
-   1. Testfehler
-   2. KCV fehler
-   3. AUC(area under curve)
-   4. Modellgröße
-   5. Auswertezeit
+      从多维度判断：
+    - Testfehler
+    - KCV fehler
+    - AUC(area under curve)
+    - Modellgröße
+    - Auswertezeit
   
 
 
