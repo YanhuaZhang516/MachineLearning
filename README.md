@@ -160,11 +160,24 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
   - characters
   - Problem in the training
 - [梯度消失问题 Vanishing Gradient Problem](https://cs231n.github.io/neural-networks-1/#actfun)
-  - 激活函数饱和问题以及解决方法
-- Weight的初始化
-- Batch Normalization
-- Regularisierung
-- Dropout
+
+当激活函数是sigmoid 函数时，当input的值很大/小时，它的值无限逼近0或1，Gradient几乎为0。因此在反向传播计算时，会导致计算值为0，从而导致这部分信息丧失。
+When the neuron’s activation saturates at either tail of 0 or 1, the gradient at these regions is almost zero. Recall that during backpropagation, this (local) gradient will be multiplied to the gradient of this gate’s output for the whole objective. Therefore, if the local gradient is very small, it will effectively “kill” the gradient and almost no signal will flow through the neuron to its weights and recursively to its data. 
+
+- 问题1：梯度消失
+  - 改变Activation function(Sättigungsfrei Aktivierung)
+  Ohne Begrenzung; schnelles Training, auch wenn nicht glatt
+    - ReLU =max(0,z)
+    - Leaky ReLU = max(\alhpa z,z)
+    - Exponential-linear unit(ELU)
+  - Weight的初始化，不要取过大的值
+  - Batch Normalization
+  
+  激活函数的输入分布保持在一个稳定状态来尽可能避免它们陷入梯度饱和区。
+- 问题2：参数 W 数量过多  
+  - Regularisierung tiefer Netze
+    - weight decay,early stopping
+  - Dropout: While training, dropout is implemented by only keeping a neuron active with some probability p (a hyperparameter), or setting it to zero otherwise.
 - Training tiefer Netze
   - MNIST
 ## 9. CNN-Architekturen und -Anwendungen
