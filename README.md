@@ -87,7 +87,62 @@ Bagging模型的核心思想是每次同类别、彼此之间无强关联的基�
  
 
 ## 5. Training und Bewertung
-- [ ] 8.24
+- [ ] 8.25
+
+- Fehlermasse
+不同机器学习任务往往需要使用不同的评估指标，下面分别介绍机器学习中回归模型、分类模型和聚类模型的评估指标
+- Bias/Varianz
+  - 偏差，方差分解 
+  - 偏差，方差与模型复杂度的关系
+- Modell-Validierung
+- lernkurven
+- Wahl der Hyperparameter
+- Kreuzvalidierung(cross validation)
+- Bootstrapping
+- Fehler-Schätzung durch Resampling
+  - KCV-Schätzung
+  - Bootstrap-Schätzung
+ - Binäre Klassifikation 分裂模型的评估指标
+  - Accuracy 准确率（ACC=TP+TF/P+N）
+  
+  准确率就是用来衡量模型对数据集中**样本预测正确**（包括positive/我想要的，negative/我不想要的）的比例，即等于所有预测正确的样本数目与所有参加预测的样本总数目的比
+  - Precision 精度（PPV= TP/TP+FP）
+ 
+ 精度指的是所有**预测为正例**的样本（TP+FP）中**真正为正例的样本（TP）**的比率。一般来说，就是你找出的这些信息中**真正是我想要的有多少**，又叫“查准率”。（常用于购物推荐）
+  
+  - sensitivity,recall 召回率 True postive rate (TPR=TP/TP+FN)
+  
+  召回率指的是所有为**正例**的样本（TP+FN）中**真的正例（TP）**的比率，用来评判你有没有把样本中所有的真的正例全部找出来，所以又叫“查全率”。通俗地讲，就是你有没有把所有我感兴趣的都给找出来（注意：查全率在犯罪检索等行为中可能比较重要。）
+  - 相对应的关系
+    - Precision-Recall-kurve: F1 score
+    - Recevier-Operating-Charakteristik(ROC curve)
+  - Mehrklassen Klassifikation
+    - Warheit matrix
+  - 分类检测考量的具体操作
+  1. Merkmale visualisieren 特征值分布视觉化 （Histogram or Gauss-modell）
+  2. Vorverarbeitung 数据预处理
+  3. Daten aufteilen 数据分类（Traningsdaten, Testdaten）
+  4.1 Referenz-Klassifikator 
+    - 线性分类器
+    - 非线性： AUC曲线
+  4.2 Lernkurven (Fehlerklassifikationsrate)
+  5. Hyperparameter bestimmen 不同模型下，调整参数对误差的影响
+    - SVM Gauß-Kernel
+    - Random Forest
+  6.1 Kandidaten auswählen:
+  算出不同模型下通过k-fold cross validation算出的 Validierungsfehler 
+  6.2. 绘制出ROC曲线
+  7. Arbeitspunkt festlegen
+  8. Finale Entscheidung
+  
+ 从多维度判断：
+  - 1. Testfehler
+  - 2. KCV fehler
+  - 3. AUC(area under curve)
+  - 4. Modellgröße
+  - 5. Auswertezeit
+  
+
 
 ## 6. Unüberwachtes Lernen
 - [ ] 8.25
