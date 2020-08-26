@@ -58,25 +58,29 @@
 
 - 决策树
 
-决策树（Decision Tree）是一种树状结构模型，可以进行基本的分类与回归，另外它也是后面要讲的集成方法经常采用的基模型。决策树主要涉及三要素：特征选择，决策树的生成和决策树的剪枝。
+决策树（Decision Tree）是一种树状结构模型，可以进行基本的分类与回归，另外它也是后面要讲的集成方法经常采用的**基模型**。决策树主要涉及三要素：**特征选择，决策树的生成和决策树的剪枝**。
+- 特征选择
+从过多的特征中选取包含信息量**最大**的。通过以下指标来选取特征：
 - Inhomogenitätsmasse 特征取值的非均匀性
   - kreuzentropie(Devianz):
   在信息论或概率统计中，用熵度量随机变量的不确定性。熵值越大，随机变量的不确定性就越大。
   - Gini-index:
-  基尼系数（Gini）可以用来度量任何不均匀分布，且介于0~1之间的数（0指完全相等，1指完全不相等）。分类度量时，总体包含的类别越杂乱，基尼系数就越大（与熵的概念相似）。
+  基尼系数（Gini）可以用来度量任何不均匀分布，且介于0~1之间的数（0指完全相等，1指完全不相等）。分类度量时，总体包含的**类别越杂乱**，基尼系数就**越大**（与熵的概念相似）。
 - CART-Algorithmus 
 - Regression-tree
   - CART for regression
+  
 - 集成方法(Ensemble-lernen)
   - Bias/Varianz-Zerlegung
 - Bagging
 
-Bagging模型的核心思想是每次同类别、彼此之间无强关联的基学习器，以均等投票机制进行基学习器的组合。
+Bagging模型的核心思想是每次**同类别、彼此之间无强关联**的基学习器，以**均等投票机**制进行基学习器的组合。
   - Bagging with decision tree
   - Random Forest 随机森林
 - Boosting
 
-与Bagging模型不同，Boosting模型的各个基学习器之间存在强关联，即后面的基学习器是建立在它前面的基学习器的基础之上的。Boosting模型的代表是提升算法（AdaBoost），更具体的是提升树（Boosting Tree），而提升树比较优秀的实现模型是梯度提升树（GBDT和XGBoost)。
+与Bagging模型不同，Boosting模型的各个基学习器**之间存在强关联**，即后面的基学习器是建立在它前面的基学习器的基础之上的。预测越准确的基学习器后面所占比重越大。
+Boosting模型的代表是提升算法（AdaBoost），更具体的是提升树（Boosting Tree），而提升树比较优秀的实现模型是梯度提升树（GBDT和XGBoost)。
 - AdaBoost
   - AdaBoost mit Baumstümpfen
 - Stufenweise additive Modellierung 逐级建模
