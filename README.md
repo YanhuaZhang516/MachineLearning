@@ -54,7 +54,7 @@
 - Einfluss der SVM-Hyperparameter
 
 ## 4. Bäume und Ensembles 决策树和基模型
-- [ ] 8.25
+- [x] 8.26
 
 - 决策树
 
@@ -66,11 +66,13 @@
   在信息论或概率统计中，用熵度量随机变量的不确定性。熵值越大，随机变量的不确定性就越大。
   - Gini-index:
   基尼系数（Gini）可以用来度量任何不均匀分布，且介于0~1之间的数（0指完全相等，1指完全不相等）。分类度量时，总体包含的**类别越杂乱**，基尼系数就**越大**（与熵的概念相似）。
-- CART-Algorithmus 
-- Regression-tree
-  - CART for regression
+- CART-Algorithmus (classification and regression tree)
+  - CART for classfication: 
+  - CART for regression: 最小平方误差 MSE=[SUM(y_j - y_pre_j)**2]/N
   
-- 集成方法(Ensemble-lernen)
+- [集成方法(Ensemble-lernen)](https://towardsdatascience.com/ensemble-methods-bagging-boosting-and-stacking-c9214a10a205)
+
+
   - Bias/Varianz-Zerlegung
 - Bagging
 
@@ -79,9 +81,10 @@ Bagging模型的核心思想是每次**同类别、彼此之间无强关联**的
   - Random Forest 随机森林
 - Boosting
 
-与Bagging模型不同，Boosting模型的各个基学习器**之间存在强关联**，即后面的基学习器是建立在它前面的基学习器的基础之上的。预测越准确的基学习器后面所占比重越大。
+与Bagging模型不同，Boosting模型的各个基学习器**之间存在强关联**，即后面的基学习器是建立在它前面的基学习器的基础之上的，预测越准确的基学习器后面所占比重越大。这样，通过多轮迭代可以得到多个基学习器及其对应的投票权重，最后按照各自的权重进行投票来输出最终预测结果。
 Boosting模型的代表是提升算法（AdaBoost），更具体的是提升树（Boosting Tree），而提升树比较优秀的实现模型是梯度提升树（GBDT和XGBoost)。
 - AdaBoost
+分类器的分类误差率越小，最后它获得的投票权重就越大，从而自动让最终的模型偏向于预测效果较好的基学习器。
   - AdaBoost mit Baumstümpfen
 - Stufenweise additive Modellierung 逐级建模
 - Boosting als stufenweise Konstruktion
@@ -147,7 +150,7 @@ Boosting模型的代表是提升算法（AdaBoost），更具体的是提升树�
   
 
 ## 6. Unüberwachtes Lernen
-- [ ] 8.25
+- [x] 8.25
 - K-means Clustering
   - Algorithmus
     - Abbruchkriterium und Cluster-Anzahl
@@ -202,7 +205,7 @@ Boosting模型的代表是提升算法（AdaBoost），更具体的是提升树�
         - BFGS
  
 ## 8. Faltende Neuronale Netze(CNNs)
-- [ ] 8.24
+- [x] 8.24、25
 - LeNet
   - Bild-Klassification
   - Faltende neuronale Netze  
@@ -281,7 +284,7 @@ Convolutional Neural Networks are very similar to ordinary Neural Networks from 
   -Frameworks for object-detection
   
 ## 10. Rekurrente Neuronale Netze
-- [ ] 8.24
+- [ ] 8.26
 - RNN Base cell
 - Abrollen von RNNs
 - RNN-configuration
